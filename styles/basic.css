@@ -6,7 +6,10 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     background-color: var(--bg-main);
+    color: var(--color-main-black);
 }
 
 ul {
@@ -26,3 +29,23 @@ a {
     padding: 0 10px;
 }
 
+.title-basic {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.divider {
+    max-width: 420px;
+    width: 100%;
+    border: none;
+    background-color: #000;
+    height: 1px;
+    margin: 16px auto 18px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 26px;
+    }
+}
