@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
   <title>Aivazovski</title>
 </head>
 
@@ -36,6 +36,38 @@
       </nav>
     </div>
   </header>
+
+  <div class="mobile-navigation" aria-label="mobile-navigation">
+    <label for="toggle-id" aria-label="open-close mobile-navigation menu">
+      <img src="assets/Burger.svg" alt="burger icon" class="mobile-navigation-burger">
+    </label>
+ 
+    <input type="checkbox" name="toggle-name" id="toggle-id" class="mobile-navigation-toggle">
+    
+    <nav class="mobile-navigation-menu" aria-label="mobile navigation">
+      <ul class="mobile-navigation-list" aria-label="mobile navigation list">
+        <li>
+          <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+        </li>
+        <li>
+          <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+        </li>
+        <li>
+          <a href="#history-id" class="mobile-navigation-link" aria-label="link to history">History</a>
+        </li>
+        <li>
+          <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#footer-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+        </li>
+      </ul>
+
+      <label for="toggle-id" aria-label="open-close mobile-navigation menu" class="mobile-navigation-close">
+        <img src="assets/Cross.svg" alt="cross icon" class="mobile-navigation-cross">
+      </label>
+    </nav>
+  </div>
 
   <main class="main" aria-label="main">
     <section class="home" aria-label="home section" id="home-id">
@@ -106,8 +138,7 @@
           </div>
           <div class="portfolio-item" aria-label="portfolio item">
             <img src="assets/wepb/portfolio3.webp" alt="portfolio photo" class="portfolio-img">
-            <p class="portfolio-description" aria-label="portfolio description">Неаполитанский залив утром, 1893 г. |
-              Gulf of Naples in the morning, 1893
+            <p class="portfolio-description" aria-label="portfolio description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893
             </p>
           </div>
         </div>
